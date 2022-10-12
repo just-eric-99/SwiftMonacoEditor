@@ -38,8 +38,7 @@ let package = Package(
   dependencies: [
     .package(
       name: "Gzip",
-      url: "https://github.com/1024jp/GzipSwift.git",
-      .upToNextMajor(from: "5.1.1")
+      url: "https://github.com/1024jp/GzipSwift.git"
     )
   ],
   targets: [
