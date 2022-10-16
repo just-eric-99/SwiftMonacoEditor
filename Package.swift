@@ -27,7 +27,6 @@ let package = Package(
   defaultLocalization: LanguageTag("en"),
   platforms: [
     .iOS(.v13),
-    .macOS(.v10_15)
   ],
   products: [
     .library(
@@ -38,7 +37,8 @@ let package = Package(
   dependencies: [
     .package(
       name: "Gzip",
-      url: "https://github.com/1024jp/GzipSwift.git"
+      url: "https://github.com/1024jp/GzipSwift.git",
+      .upToNextMajor(from: "5.1.1")
     )
   ],
   targets: [
